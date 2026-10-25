@@ -1,0 +1,28 @@
+[project]
+name = "espkvm-mcp"
+version = "0.1.0"
+description = "Give a model the screen, keyboard and mouse of a machine through an ESP-KVM"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{ name = "ESP-KVM contributors" }]
+keywords = ["mcp", "kvm", "ipkvm", "espkvm", "bios", "automation"]
+dependencies = [
+    "mcp>=2.0.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+espkvm-mcp = "espkvm_mcp.server:main"
+
+[project.urls]
+Homepage = "https://espkvm.io"
+Source = "https://github.com/espkvm/mcp"
+Firmware = "https://github.com/espkvm/espkvm"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/espkvm_mcp"]
