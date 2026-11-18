@@ -5,7 +5,7 @@ description = "Give a model the screen, keyboard and mouse of a machine through 
 readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
-authors = [{ name = "ESP-KVM contributors" }]
+authors = [{ name = "Evgenij Spitsyn and ESP-KVM contributors" }]
 keywords = ["mcp", "kvm", "ipkvm", "espkvm", "bios", "automation"]
 dependencies = [
     "mcp>=2.0.0",
